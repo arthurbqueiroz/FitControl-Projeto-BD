@@ -7,6 +7,6 @@ O presente projeto consiste no planejamento e modelagem de um sistema de banco d
 
 ## Escopo do Projeto
 O sistema é composto por três módulos principais:
-* **Gestão de Alunos e Matrículas:** Registro completo dos dados cadastrais dos clientes e o histórico de suas situações cadastrais (ativo/inativo).
+* **Gestão de Alunos e Matrículas:** Registro completo dos dados cadastrais dos clientes e o histórico de suas situações cadastrais.
 * **Controle de Planos e Contratos:** Parametrização dos pacotes oferecidos pela academia (valores, durações e vigências), permitindo vincular cada aluno ao seu respectivo plano financeiro.
 * **Prescrição e Acompanhamento de Treinos:** Módulo técnico focado na atuação dos instrutores, permitindo a montagem de fichas de exercícios personalizadas por aluno, divisão de treinos (Ex: Treino A, B, C) e controle de cargas.
