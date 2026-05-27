@@ -3,7 +3,7 @@ Sistema de gerenciamento e automação de banco de dados para a academia FITCONT
 
 
 ## Objetivo do Projeto
-O presente projeto consiste no planejamento e modelagem de um sistema de banco de dados voltado para a automatização e gerenciamento operacional de uma academia de ginástica. O objetivo principal é integrar os setores administrativo e técnico, garantindo o controle eficiente do fluxo de alunos, a saúde financeira através da gestão de planos de assinatura e a prescrição qualificada de treinos físicos.
+O projeto consiste no planejamento e modelagem de um sistema de banco de dados voltado para a automatização e gerenciamento operacional de uma academia. O objetivo principal é integrar os setores administrativo e técnico, garantindo o controle eficiente do fluxo de alunos, a saúde financeira através da gestão de planos de assinatura e a prescrição qualificada de treinos físicos.
 
 ## Escopo do Projeto
 O sistema é composto por três módulos principais:
