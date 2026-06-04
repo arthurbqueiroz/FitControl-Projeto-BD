@@ -130,3 +130,33 @@ FROM TREINO T
 INNER JOIN TREINO_EXERCICIO TE ON T.id_treino = TE.id_treino
 INNER JOIN EXERCICIO E ON TE.id_exercicio = E.id_exercicio
 WHERE TE.series = 0 OR TE.repeticoes = 0;
+
+
+-- VIEW 1: Simplifica o Relatório 2 (Visão Geral de Fichas de Treino Completas)
+CREATE VIEW VW_FICHAS_TREINO_DETALHADAS AS
+SELECT 
+    T.id_treino,
+    A.nome AS nome_aluno,
+    I.nome AS nome_instrutor,
+    T.nome_treino,
+    E.nome_exercicio,
+    TE.series,
+    TE.repeticoes,
+    TE.carga
+FROM TREINO T
+INNER JOIN ALUNO A ON T.id_aluno = A.id_aluno
+INNER JOIN INSTRUTOR I ON T.id_instrutor = I.id_instrutor
+INNER JOIN TREINO_EXERCICIO TE ON T.id_treino = TE.id_treino
+INNER JOIN EXERCICIO E ON TE.id_exercicio = E.id_exercicio;
+
+
+-- VIEW 2: Simplifica a Consulta 6 (Lista de Alunos Inconsistentes para a Secretaria)
+CREATE VIEW VW_ALUNOS_INCONSISTENTES AS
+SELECT 
+    A.id_aluno,
+    A.nome AS nome_aluno,
+    A.cpf,
+    A.data_ultima_mensalidade
+FROM ALUNO A
+LEFT JOIN PLANO P ON A.id_plano = P.id_plano
+WHERE A.id_plano IS NULL OR A.data_ultima_mensalidade IS NULL;
