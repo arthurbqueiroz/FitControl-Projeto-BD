@@ -35,7 +35,7 @@ INSERT INTO PLANO (id_plano, nome, valor) VALUES
 -- --------------------------------------------------------------------
 -- 2. TABELA: INSTRUTOR (20 Instrutores Válidos + Inconsistências)
 -- --------------------------------------------------------------------
-INSERT INTO INSTRUTOR (id_instrutor, nome, specialty) VALUES 
+INSERT INTO INSTRUTOR (id_instrutor, nome, especialidade) VALUES 
 (10, 'Rodrigo Silva', 'Musculação Hipertrofia'),
 (20, 'Mariana Costa', 'Treinamento Funcional e Pilates'),
 (30, 'Carlos Eduardo', 'Cárdio e Alta Performance'),
